@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
   get 'business_qr_codes/show'
+
   namespace :admin do
     resources :administrators
     resources :customers
@@ -51,6 +54,4 @@ Rails.application.routes.draw do
   root 'businesses#index'
 
   get '/kit_ui', to: 'static_pages#kit_ui'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

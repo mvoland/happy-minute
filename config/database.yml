@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: happy-minute_development
+  database: happy-minute_develop_db
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: happy-minute_test
+  database: happy-minute_test_db
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: happy-minute_production
+  database: happy-minute_production_db
   username: happy-minute
   password: <%= ENV['HAPPY-MINUTE_DATABASE_PASSWORD'] %>
