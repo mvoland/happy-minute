@@ -11,8 +11,6 @@
 // about supported directives.
 //
 
-//= require rails-ujs
-//= require activestorage
 //= require jquery-min
 //= require tether.min
 //= require bootstrap.min

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
@@ -29,15 +29,16 @@
       <i class="lnr lnr-arrow-up"></i>
     </a>
 
-    <div id="loader">
+    <!--    <div id="loader">
       <div class="spinner">
         <div class="double-bounce1"></div>
         <div class="double-bounce2"></div>
       </div>
     </div>
+    !-->
 
-    <%= javascript_include_tag 'application' %>
-
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 
 </html>
